@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(218, 88, 153);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;s
+}
+
+#container {
+  display: flex;
+}
+
+#calculadora {
+  text-align: center;
+  max-width: 450px;
+  padding: 20px;
+  background-color: rgba(182, 17, 157, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(239, 236, 236);
+  backdrop-filter: blur(10px);
+}
+
+label {
+  float: left;
+  margin: 5px 0;
+}
+
+input {
+  width: 100%;
+  border-radius: 8px;
+  margin: 4px 0;
+  text-align: right;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: #3d0f38;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 16px;
+  font-size: 18px;
+  padding: 7px 40px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(94, 25, 146);
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+#resultadoTexto {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: rgb(225, 219, 230);
+  margin-top: 8px;
+
+}
+
+#tabela {
+  max-width: 100%;
+  padding: 8px;
+  margin-left: 20px;
+  background-color: rgba(197, 163, 201, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(230, 232, 229);
+  backdrop-filter: blur(10px);
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 0px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: rgb(241, 182, 237);
+}
+
+@media (max-width: 576px) {
+  #container {
+      display: block;
+      padding: 20px;
+  }
+
+  #tabela {
+      display: none;
+  }
+}
